@@ -97,7 +97,7 @@
                 </div>
                 <div class="col">
                     <div class="tol t2 shadow-sm">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-car"></i>
                         <p>Earned</p>
                         <h2>$325.00</h2>
                     </div>
@@ -192,11 +192,13 @@
 
     <script type="text/javascript">
         $('.bars').click(function () {
-            $('.left-menu').animate({left: '0vw'})
+            $('.left-menu').show();
+            $('.left-menu .main').animate({left: '0vw'})
         });
 
         $('.left-menu').click(function () {
-            $('.left-menu').animate({left: '-100vw'})
+            $('.left-menu .main').animate({left: '-100vw'});            
+            $('.left-menu').hide(100);
         });
 
 
