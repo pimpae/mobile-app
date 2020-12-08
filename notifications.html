@@ -150,11 +150,13 @@
 
     <script type="text/javascript">
         $('.bars').click(function () {
-            $('.left-menu').animate({left: '0vw'})
+            $('.left-menu').show();
+            $('.left-menu .main').animate({left: '0vw'})
         });
 
         $('.left-menu').click(function () {
-            $('.left-menu').animate({left: '-100vw'})
+            $('.left-menu .main').animate({left: '-100vw'});            
+            $('.left-menu').hide(100);
         });
 
 
